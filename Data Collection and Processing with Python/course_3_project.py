@@ -1,34 +1,70 @@
-# coding:utf-8
-# File Name：     course_3_project
-# Description :
-# Author :       micro
-# Date：          2019/9/30
-'''
-This project will take you through the process of mashing up data from two different APIs to make movie recommendations. The TasteDive API lets you provide a movie (or bands, TV shows, etc.) as a query input, and returns a set of related items. The OMDB API lets you provide a movie title as a query input and get back data about the movie, including scores from various review sites (Rotten Tomatoes, IMDB, etc.).
-
-You will put those two together. You will use TasteDive to get related movies for a whole list of titles. You’ll combine the resulting lists of related movies, and sort them according to their Rotten Tomatoes scores (which will require making API calls to the OMDB API.)
-
-To avoid problems with rate limits and site accessibility, we have provided a cache file with results for all the queries you need to make to both OMDB and TasteDive. Just use requests_with_caching.get() rather than requests.get(). If you’re having trouble, you may not be formatting your queries properly, or you may not be asking for data that exists in our cache. We will try to provide as much information as we can to help guide you to form queries for which data exists in the cache.
-
-Your first task will be to fetch data from TasteDive. The documentation for the API is at https://tastedive.com/read/api.
-
-Define a function, called get_movies_from_tastedive. It should take one input parameter, a string that is the name of a movie or music artist. The function should return the 5 TasteDive results that are associated with that string; be sure to only get movies, not other kinds of media. It will be a python dictionary with just one key, ‘Similar’.
-
-Try invoking your function with the input “Black Panther”.
-
-HINT: Be sure to include only q, type, and limit as parameters in order to extract data from the cache. If any other parameters are included, then the function will not be able to recognize the data that you’re attempting to pull from the cache. Remember, you will not need an api key in order to complete the project, because all data will be found in the cache.
-
-The cache includes data for the following queries:
-
-'''
-
 import requests
 
 
-# some invocations that we use in the automated tests; uncomment these if you are getting errors and want better error messages
+def get_movies_from_tastedive(movieName, key="327878-course3p-I4ZNBN4A"):
+    baseurl = "https://tastedive.com/api/similar"
+    params_d = {}
+    params_d["q"] = movieName
+    params_d["k"] = key
+    params_d["type"] = "movies"
+    params_d["limit"] = "5"
+    resp = requests.get(baseurl, params=params_d)
+    print(resp.url)
+    respDic = resp.json()
+    return respDic
 
-# get_movies_from_tastedive("Bridesmaids")
-def get_movies_from_tastedive(name):
-    response = requests.requests_with_caching('https://tastedive.com/read/api',name)
-    print(response)
-# get_movies_from_tastedive("Black Panther")
+
+def extract_movie_titles(movieName):
+    result = []
+    for listRes in movieName['Similar']['Results']:
+        result.append(listRes['Name'])
+    return result
+
+
+def get_related_titles(listMovieName):
+    if listMovieName != []:
+        auxList = []
+        relatedList = []
+        for movieName in listMovieName:
+            auxList = extract_movie_titles(get_movies_from_tastedive(movieName))
+            for movieNameAux in auxList:
+                if movieNameAux not in relatedList:
+                    relatedList.append(movieNameAux)
+
+        return relatedList
+    return listMovieName
+
+
+def get_movie_data(movieName, key="546c6742"):
+    baseurl = "http://www.omdbapi.com/"
+    params_d = {}
+    params_d["t"] = movieName
+    params_d["apikey"] = key
+    params_d["r"] = "json"
+    resp = requests.get(baseurl, params=params_d)
+    print(resp.url)
+    respDic = resp.json()
+    return respDic
+
+
+def get_movie_rating(movieNameJson):
+    strRanting = ""
+    for typeRantingList in movieNameJson["Ratings"]:
+        if typeRantingList["Source"] == "Rotten Tomatoes":
+            strRanting = typeRantingList["Value"]
+    if strRanting != "":
+        ranting = int(strRanting[:2])
+    else:
+        ranting = 0
+    return ranting
+
+
+def get_sorted_recommendations(listMovieTitle):
+    listMovie = get_related_titles(listMovieTitle)
+    listMovie = sorted(listMovie, key=lambda movieName: (get_movie_rating(get_movie_data(movieName)), movieName),
+                       reverse=True)
+
+    return listMovie
+
+
+print(get_sorted_recommendations(["Bridesmaids", "Sherlock Holmes"]))
