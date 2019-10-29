@@ -22,6 +22,12 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="settings.editor.selected.configurable" value="fileTemplates" />
   </component>
   <component name="RunDashboard">
@@ -36,7 +42,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Python.course_4_assessment_2">
     <configuration name="course_4_assessment_1" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="coursera-Python-3-Programming" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -59,8 +65,31 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="course_4_assessment_2" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="coursera-Python-3-Programming" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Python Classes and Inheritance" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Python Classes and Inheritance/course_4_assessment_2.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.course_4_assessment_2" />
         <item itemvalue="Python.course_4_assessment_1" />
       </list>
     </recent_temporary>
@@ -81,6 +110,7 @@
       <workItem from="1572337700141" duration="529000" />
       <workItem from="1572339443109" duration="2758000" />
       <workItem from="1572342769051" duration="5000" />
+      <workItem from="1572356293788" duration="4142000" />
     </task>
     <servers />
   </component>
@@ -101,6 +131,7 @@
     </option>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/coursera_Python_3_Programming$course_4_assessment_2.coverage" NAME="course_4_assessment_2 Coverage Results" MODIFIED="1572364739786" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Python Classes and Inheritance" />
     <SUITE FILE_PATH="coverage/coursera_Python_3_Programming$course_4_assessment_1.coverage" NAME="course_4_assessment_1 Coverage Results" MODIFIED="1572341803982" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Python Classes and Inheritance" />
   </component>
 </project>
