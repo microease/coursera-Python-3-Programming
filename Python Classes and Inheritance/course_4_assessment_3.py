@@ -17,6 +17,7 @@ def mySum(list):
     else:
         return 0
 
+
 # The class Student is supposed to accept two arguments in its constructor:
 # A name string
 # An optional integer representing the number of years the student has been at Michigan (default:1)
@@ -41,3 +42,18 @@ def mySum(list):
 # .getKnowledge（）应该返回self.knowledge的值
 # .year_at_umich（）应该返回self.years_UM的值
 # 该类中存在一个或多个错误。 使用此空间编写测试用例，以确定存在哪些错误。 您将使用此信息来回答下一组选择题。
+class Student:
+    def __init__(self, name, year_UM, knowledge):
+        self.name = name
+        self.year_UM = year_UM
+        self.knowledge = knowledge
+
+    def study(self):
+        self.knowledge += 1
+        return None
+
+    def getKnowledge(self):
+        return self.knowledge
+
+    def year_at_umich(self):
+        return self.year_UM
