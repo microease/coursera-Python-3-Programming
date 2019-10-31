@@ -21,7 +21,7 @@
   <component name="ProjectId" id="1Rpq2Spl5OEJPVZYiKPHYuE1gSI" />
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/Python Project  pillow  tesseract  and opencv" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -29,6 +29,12 @@
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.Color Scheme Font" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Github\coursera-Python-3-Programming\Python Project  pillow  tesseract  and opencv" />
+      <recent name="D:\Github\coursera-Python-3-Programming\Python Project  pillow  tesseract  and opencv\readonly" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -42,7 +48,29 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.course_4_project">
+  <component name="RunManager" selected="Python.assignment_1">
+    <configuration name="assignment_1" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="coursera-Python-3-Programming" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Python Project  pillow  tesseract  and opencv" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Python Project  pillow  tesseract  and opencv/assignment_1.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="course_4_assessment_1" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="coursera-Python-3-Programming" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -133,6 +161,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.assignment_1" />
         <item itemvalue="Python.course_4_project" />
         <item itemvalue="Python.course_4_assessment_4" />
         <item itemvalue="Python.course_4_assessment_2" />
@@ -161,6 +190,7 @@
       <workItem from="1572399847180" duration="9537000" />
       <workItem from="1572425372928" duration="4668000" />
       <workItem from="1572441328301" duration="2384000" />
+      <workItem from="1572485757089" duration="4676000" />
     </task>
     <servers />
   </component>
@@ -181,6 +211,7 @@
     </option>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/coursera_Python_3_Programming$assignment_1.coverage" NAME="assignment_1 Coverage Results" MODIFIED="1572489415847" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Python Project  pillow  tesseract  and opencv" />
     <SUITE FILE_PATH="coverage/coursera_Python_3_Programming$course_4_assessment_4.coverage" NAME="course_4_assessment_4 Coverage Results" MODIFIED="1572420005760" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Python Classes and Inheritance" />
     <SUITE FILE_PATH="coverage/coursera_Python_3_Programming$course_4_project.coverage" NAME="course_4_project Coverage Results" MODIFIED="1572426165911" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Python Classes and Inheritance" />
     <SUITE FILE_PATH="coverage/coursera_Python_3_Programming$course_4_assessment_2.coverage" NAME="course_4_assessment_2 Coverage Results" MODIFIED="1572364739786" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Python Classes and Inheritance" />
